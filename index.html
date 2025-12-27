@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Celebrate New Year 2026 with a stunning interactive website featuring countdown timer, fireworks, confetti, and festive animations.">
+    <title>Happy New Year 2026 🎆</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f386.png">
+    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f386.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <a href="#hero" class="skip-link">Skip to main content</a>
+    <canvas id="fireworksCanvas" aria-hidden="true"></canvas>
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1 class="hero-title" id="heroTitle">
+                <span class="title-line-1">
+                    <span class="typing-text">Happy New Year</span>
+                </span>
+                <span class="title-line-2">
+                    <span class="typing-text-2">2026</span>
+                    <span class="emoji">🎆</span>
+                </span>
+            </h1>
+            <div class="countdown-container">
+                <div class="countdown-label">Time Until New Year</div>
+                <div class="countdown" id="countdown">
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="days">00</span>
+                        <span class="countdown-label-small">Days</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="hours">00</span>
+                        <span class="countdown-label-small">Hours</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="minutes">00</span>
+                        <span class="countdown-label-small">Minutes</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="seconds">00</span>
+                        <span class="countdown-label-small">Seconds</span>
+                    </div>
+                </div>
+            </div>
+            <div class="greeting-message" id="greetingMessage"></div>
+            <button class="cta-button" id="celebrateBtn">
+                <span>Celebrate 🎉</span>
+                <div class="button-shine"></div>
+            </button>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <section class="wishes-section" id="wishes">
+        <div class="container">
+            <h2 class="section-title">New Year Wishes</h2>
+            <div class="wishes-grid">
+                <div class="wish-card">
+                    <div class="card-icon">✨</div>
+                    <h3>New Beginnings</h3>
+                    <p>May this year bring you fresh opportunities and endless possibilities to shine bright!</p>
+                </div>
+                <div class="wish-card">
+                    <div class="card-icon">🌟</div>
+                    <h3>Health & Happiness</h3>
+                    <p>Wishing you a year filled with good health, joy, and moments that make you smile!</p>
+                </div>
+                <div class="wish-card">
+                    <div class="card-icon">💫</div>
+                    <h3>Success & Growth</h3>
+                    <p>May you achieve all your goals and grow beyond your wildest dreams this year!</p>
+                </div>
+                <div class="wish-card">
+                    <div class="card-icon">🎯</div>
+                    <h3>Love & Peace</h3>
+                    <p>May your heart be filled with love and your life be surrounded by peace and harmony!</p>
+                </div>
+                <div class="wish-card">
+                    <div class="card-icon">🚀</div>
+                    <h3>Adventure Awaits</h3>
+                    <p>Embrace new adventures and create beautiful memories that will last a lifetime!</p>
+                </div>
+                <div class="wish-card">
+                    <div class="card-icon">🎊</div>
+                    <h3>Celebration</h3>
+                    <p>Here's to celebrating every moment, big or small, and finding joy in the journey!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="music-control" id="musicControl">
+        <button class="music-btn" id="musicBtn" aria-label="Toggle background music">
+            <span class="music-icon" aria-hidden="true">🎵</span>
+            <span class="music-text">Music</span>
+        </button>
+        <audio id="backgroundMusic" loop preload="none">
+            <!-- <source src="your-music-file.mp3" type="audio/mpeg"> -->
+        </audio>
+    </div>
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-message">May 2026 be your best year yet! 🎉</p>
+            <!-- GitHub link -->
+            <div class="footer-links">
+                <a href="https://github.com/jenit-lal-shakya" class="github-link" aria-label="Visit GitHub profile" rel="noopener noreferrer" target="_blank">
+                    <i class="fab fa-github github-icon" aria-hidden="true"></i>
+                    <span class="github-text">GitHub</span>
+                </a>
+            </div>
+            <!-- Footer message and credits -->
+            <p class="footer-credit">Made with ❤️ for New Year 2026</p>
+        </div>
+    </footer>
+
+    <canvas id="confettiCanvas" aria-hidden="true"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
